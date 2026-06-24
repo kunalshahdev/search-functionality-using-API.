@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tv search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="page-wrap">
+    <header>
+      <h1>tv search</h1>
+      <p class="subtitle">find something to binge</p>
+    </header>
+
+    <form id="search-form">
+      <div class="search-row">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="search for a show..."
+          autocomplete="off"
+        />
+        <button type="submit" id="search-btn">search</button>
+      </div>
+    </form>
+
+    <div id="loading" class="hidden">searching...</div>
+    <div id="error" class="hidden"></div>
+    <div id="empty" class="hidden"></div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
